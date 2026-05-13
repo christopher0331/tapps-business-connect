@@ -11,7 +11,14 @@ type CategoryOption = {
 };
 
 function shuffleMembers(members: Member[]) {
-  return [...members].sort(() => Math.random() - 0.5);
+  const shuffled = [...members];
+
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const randomIndex = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[i]];
+  }
+
+  return shuffled;
 }
 
 function MemberCard({ member }: { member: Member }) {
@@ -70,7 +77,7 @@ export default function MemberDirectory({
   members: Member[];
   categories: CategoryOption[];
 }) {
-  const [orderedMembers, setOrderedMembers] = useState<Member[]>(members);
+  const [orderedMembers, setOrderedMembers] = useState<Member[] | null>(null);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("all");
 
@@ -80,8 +87,9 @@ export default function MemberDirectory({
 
   const filteredMembers = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
+    const randomizedMembers = orderedMembers ?? [];
 
-    return orderedMembers.filter((member) => {
+    return randomizedMembers.filter((member) => {
       const matchesCategory = category === "all" || member.categorySlug === category;
       const matchesQuery =
         !normalizedQuery ||
@@ -145,7 +153,14 @@ export default function MemberDirectory({
           </div>
         </div>
 
-        {filteredMembers.length > 0 ? (
+        {!orderedMembers ? (
+          <div className="rounded-[2rem] bg-white px-8 py-20 text-center shadow-[0_8px_32px_rgba(0,0,0,0.06)]">
+            <p className="mb-4 font-serif text-[2.5rem] font-light text-charcoal">Loading directory.</p>
+            <p className="mx-auto max-w-xl text-[15px] leading-7 text-charcoal/60">
+              Randomizing member order so every business gets a fair position.
+            </p>
+          </div>
+        ) : filteredMembers.length > 0 ? (
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {filteredMembers.map((member) => (
               <MemberCard key={member.slug} member={member} />
