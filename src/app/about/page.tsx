@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GuidelinesMobileAccordion from "@/components/GuidelinesMobileAccordion";
+import GuidelinesTabs from "@/components/GuidelinesTabs";
 import Marquee from "@/components/Marquee";
-import { categories } from "@/lib/business-connect-data";
 
 const accordions = [
   {
@@ -162,31 +162,6 @@ const features = [
   },
 ];
 
-function Accordion({ title, body }: { title: string; body: React.ReactNode }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="border-b border-charcoal/10 last:border-0">
-      <button
-        onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between py-5 text-left"
-        aria-expanded={open}
-      >
-        <span className="font-serif text-[1.05rem] font-light leading-snug text-charcoal pr-6">{title}</span>
-        <span className="shrink-0 flex h-7 w-7 items-center justify-center rounded-full border border-charcoal/20 text-charcoal/50 transition-transform duration-300" style={{ transform: open ? "rotate(45deg)" : "rotate(0deg)" }}>
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-3.5 w-3.5">
-            <path d="M8 3v10M3 8h10" strokeLinecap="round" />
-          </svg>
-        </span>
-      </button>
-      {open && (
-        <div className="pb-6 text-[14px] leading-7 text-charcoal/65">
-          {body}
-        </div>
-      )}
-    </div>
-  );
-}
-
 export default function BusinessConnectAboutPage() {
   return (
     <>
@@ -210,28 +185,14 @@ export default function BusinessConnectAboutPage() {
           </div>
         </section>
 
-        {/* Accordion + photos */}
+        {/* Guidelines */}
         <section className="bg-white py-20 sm:py-28">
           <div className="mx-auto max-w-[1440px] px-6 lg:px-12">
-            <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
-
-              {/* Accordion — left */}
-              <div className="lg:col-span-7">
-                {accordions.map((a) => (
-                  <Accordion key={a.title} title={a.title} body={a.body} />
-                ))}
-              </div>
-
-              {/* Photos — right */}
-              <div className="lg:col-span-5 flex flex-col gap-4">
-                <div className="aspect-square overflow-hidden rounded-3xl bg-[#e8e0d5] flex items-center justify-center">
-                  <span className="text-[11px] uppercase tracking-[0.3em] text-charcoal/30">Monthly Meeting</span>
-                </div>
-                <div className="aspect-[4/1] overflow-hidden rounded-2xl bg-[#ddd5c8] flex items-center justify-center">
-                  <span className="text-[11px] uppercase tracking-[0.3em] text-charcoal/30">Connections After Close</span>
-                </div>
-              </div>
-
+            <div className="lg:hidden">
+              <GuidelinesMobileAccordion items={accordions} />
+            </div>
+            <div className="hidden lg:block">
+              <GuidelinesTabs items={accordions} />
             </div>
           </div>
         </section>
@@ -241,29 +202,14 @@ export default function BusinessConnectAboutPage() {
           <div className="mx-auto max-w-[1440px] px-6 lg:px-12">
 
             {/* Wide event banner */}
-            <div className="mb-16 aspect-[4/1] min-h-[180px] overflow-hidden rounded-3xl bg-[#242420] flex flex-col items-center justify-center text-center px-6">
-              <p className="text-[11px] uppercase tracking-[0.35em] text-white/40 mb-4">Tapps Business Connect</p>
-              <h2 className="font-serif text-[clamp(1.8rem,4vw,3rem)] font-light text-white">Stronger Business. Trusted Referrals.</h2>
+            <div className="mb-16 overflow-hidden rounded-3xl bg-[#242420] px-5 py-14 text-center sm:aspect-[4/1] sm:min-h-[180px] sm:px-6 sm:py-0 sm:flex sm:flex-col sm:items-center sm:justify-center">
+              <p className="mb-4 text-[10px] uppercase tracking-[0.22em] text-white/40 sm:text-[11px] sm:tracking-[0.35em]">Tapps Business Connect</p>
+              <h2 className="mx-auto max-w-[14rem] font-serif text-[2rem] font-light leading-[1.05] text-white sm:max-w-none sm:text-[clamp(1.8rem,4vw,3rem)]">
+                Stronger Business. Trusted Referrals.
+              </h2>
             </div>
 
-            {/* Photos + feature list */}
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-start">
-
-              {/* Photo collage */}
-              <div className="lg:col-span-5 grid grid-cols-2 gap-3">
-                <div className="col-span-2 aspect-video overflow-hidden rounded-2xl bg-[#2a2a27] flex items-center justify-center">
-                  <span className="text-[11px] uppercase tracking-[0.3em] text-white/20">TBC Members</span>
-                </div>
-                <div className="aspect-square overflow-hidden rounded-2xl bg-[#242420] flex items-center justify-center">
-                  <span className="text-[11px] uppercase tracking-[0.3em] text-white/20">Networking</span>
-                </div>
-                <div className="aspect-square overflow-hidden rounded-2xl bg-[#2e2e2a] flex items-center justify-center">
-                  <span className="text-[11px] uppercase tracking-[0.3em] text-white/20">After Close</span>
-                </div>
-              </div>
-
-              {/* Feature list */}
-              <div className="lg:col-span-7 space-y-10">
+            <div className="mx-auto max-w-4xl space-y-10">
                 {features.map((f, i) => (
                   <div key={i} className="flex gap-6 items-start">
                     <span className="mt-0.5 font-serif text-[2rem] font-light leading-none text-white/15 shrink-0 w-10 text-right">
@@ -284,13 +230,12 @@ export default function BusinessConnectAboutPage() {
                     Apply for Membership
                   </Link>
                   <Link
-                    href="/"
+                    href="/directory"
                     className="inline-flex items-center rounded-full border border-white/35 px-8 py-4 text-[12px] uppercase tracking-[0.25em] text-white transition-all duration-500 hover:bg-white/10"
                   >
                     View Member Directory
                   </Link>
                 </div>
-              </div>
             </div>
           </div>
         </section>

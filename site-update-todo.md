@@ -86,17 +86,17 @@
 
 ## Priority 5: Group Structure & Guidelines Meeting Boxes
 
-- [ ] On the Group Structure & Guidelines page, remove the right-side brown "Monthly Meeting" box.
-- [ ] On the Group Structure & Guidelines page, remove the right-side brown "Connections After Close" box.
-- [ ] Keep this page focused on group structure, standards, expectations, and guidelines.
-- [ ] Leave meeting dates/times to the RSVP/event flow or another more appropriate page.
+- [x] On the Group Structure & Guidelines page, remove the right-side brown "Monthly Meeting" box.
+- [x] On the Group Structure & Guidelines page, remove the right-side brown "Connections After Close" box.
+- [x] Keep this page focused on group structure, standards, expectations, and guidelines.
+- [x] Leave meeting dates/times to the RSVP/event flow or another more appropriate page.
 
 ## Priority 6: Group Structure & Guidelines Placeholder Content
 
-- [ ] Review the Group Structure & Guidelines page for placeholder or boilerplate content.
-- [ ] Clean up sections that are not finalized or do not belong there, including possible sections such as:
-  - [ ] TBC Members.
-  - [ ] Networking After Close.
+- [x] Review the Group Structure & Guidelines page for placeholder or boilerplate content.
+- [x] Clean up sections that are not finalized or do not belong there, including possible sections such as:
+  - [x] TBC Members.
+  - [x] Networking After Close.
 
 ## Priority 7: Navigation / Menu Consistency
 
