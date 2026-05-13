@@ -26,7 +26,7 @@ export default function BusinessConnectPage() {
       <Header />
       <main className="bg-white">
 
-        <section className="bg-[#1a1a18] pt-20 pb-24 sm:pt-28 sm:pb-32">
+        <section className="bg-[#1a1a18] pt-14 pb-24 sm:pt-20 sm:pb-32">
           <div className="mx-auto max-w-[1440px] px-6 lg:px-12">
             <div className="flex flex-col items-start gap-10 lg:flex-row lg:items-end lg:justify-between">
               <div>

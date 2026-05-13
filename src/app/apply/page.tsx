@@ -72,6 +72,8 @@ const requirements = [
   },
 ];
 
+const APPLICATION_FORM_URL = "https://415kr0.share-na2.hsforms.com/2skIuf8o5Q3qUKGNleZ6XTg";
+
 export default function MemberApplicationPage() {
   return (
     <>
@@ -93,7 +95,9 @@ export default function MemberApplicationPage() {
               Membership at Tapps Business Connect is intentionally selective. Please review all requirements carefully before beginning. The application takes approximately <strong className="text-white/80 font-normal">90 minutes</strong> and does not save progress — set aside uninterrupted time.
             </p>
             <a
-              href="#application"
+              href={APPLICATION_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-[12px] uppercase tracking-[0.25em] text-charcoal transition-all duration-500 hover:bg-white/90"
             >
               Begin Application
@@ -158,7 +162,7 @@ export default function MemberApplicationPage() {
               </div>
               <div className="flex flex-col gap-4 lg:items-end">
                 <a
-                  href="https://415kr0.share-na2.hsforms.com/2skIuf8o5Q3qUKGNleZ6XTg"
+                  href={APPLICATION_FORM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 rounded-full bg-white px-10 py-5 text-[12px] uppercase tracking-[0.25em] text-charcoal transition-all duration-500 hover:bg-white/90"

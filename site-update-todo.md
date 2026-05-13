@@ -64,15 +64,15 @@
 
 ## Priority 2: Member Application Button Path
 
-- [ ] Update the top "Begin Application" button on the Member Application page so it goes directly to the HubSpot Tapps Business Connect Exclusive Membership Application form.
-- [ ] Update the bottom "Start Application" button so it also goes directly to the same HubSpot form.
-- [ ] Remove the extra jump/extra click currently required to reach the HubSpot form.
+- [x] Update the top "Begin Application" button on the Member Application page so it goes directly to the HubSpot Tapps Business Connect Exclusive Membership Application form.
+- [x] Update the bottom "Start Application" button so it also goes directly to the same HubSpot form.
+- [x] Remove the extra jump/extra click currently required to reach the HubSpot form.
 
 ## Priority 3: Member Application Footer / Logo Issue
 
-- [ ] Review the dark section at the bottom of the Member Application page.
-- [ ] Fix the white square that appears to be a missing or incorrectly displayed logo.
-- [ ] Display the proper Tapps Business Connect logo correctly, or remove the broken/empty logo box if it is not needed.
+- [x] Review the dark section at the bottom of the Member Application page.
+- [x] Fix the white square that appears to be a missing or incorrectly displayed logo.
+- [x] Display the proper Tapps Business Connect logo correctly, or remove the broken/empty logo box if it is not needed.
 
 ## Priority 4: RSVP for Next Event Page
 

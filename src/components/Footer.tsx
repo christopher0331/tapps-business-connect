@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { BC_LOGO } from "@/lib/business-connect-data";
 
 const categoryLinks = [
   { label: "Home Services", href: "/home-services" },
@@ -65,13 +63,9 @@ export default function Footer() {
             className="lg:col-span-4"
           >
             <div className="mb-6">
-              <Image
-                src={BC_LOGO}
-                alt="Tapps Business Connect"
-                width={180}
-                height={45}
-                className="h-10 w-auto brightness-0 invert"
-              />
+              <Link href="/" className="font-serif text-[1.75rem] font-light leading-none text-white">
+                Tapps Business Connect
+              </Link>
             </div>
             <p className="text-[14px] text-white/40 leading-relaxed max-w-xs mb-8">
               High-standard businesses. Real relationships. Trusted referrals. A networking group for professionals in East Pierce County.
