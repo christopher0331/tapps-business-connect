@@ -3,8 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
-import { BC_LOGO } from "@/lib/business-connect-data";
 
 const mainNav = [
   { label: "Home", href: "/" },
@@ -13,13 +11,8 @@ const mainNav = [
   { label: "Apply", href: "/apply" },
 ];
 
-const categoryNav = [
-  { label: "Home Services", href: "/home-services" },
-  { label: "Finance & Professional", href: "/finance-professional" },
-  { label: "Trades & Specialty", href: "/trades-specialty" },
-  { label: "Health & Wellness", href: "/health-wellness" },
-  { label: "Lifestyle & Personal", href: "/lifestyle-personal-services" },
-  { label: "Food & Hospitality", href: "/food-hospitality" },
+const secondaryNav = [
+  { label: "Member Directory", href: "/directory" },
 ];
 
 export default function Header() {
@@ -49,19 +42,7 @@ export default function Header() {
         }`}
       >
         <div className="mx-auto max-w-[1440px] px-6 lg:px-12">
-          <div className="flex items-center justify-between h-20 lg:h-24">
-            <Link href="/" className="relative z-10">
-              <Image
-                src={BC_LOGO}
-                alt="Tapps Business Connect"
-                width={200}
-                height={60}
-                className={`h-14 lg:h-16 w-auto transition-all duration-500 ${
-                  scrolled ? "" : "invert mix-blend-screen"
-                }`}
-              />
-            </Link>
-
+          <div className="flex items-center justify-end h-20 lg:h-24">
             <nav className="hidden lg:flex items-center gap-8">
               {mainNav.map((item) => (
                 <Link
@@ -147,7 +128,7 @@ export default function Header() {
                 </Link>
               ))}
               <div className="w-12 h-px bg-white/20 my-2" />
-              {categoryNav.map((item) => (
+              {secondaryNav.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}

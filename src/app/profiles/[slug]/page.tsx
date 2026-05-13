@@ -99,9 +99,9 @@ export default async function MemberProfilePage({
           <div className="mx-auto max-w-[1440px] px-6 lg:px-12">
             {/* Breadcrumb */}
             <div className="mb-8 flex items-center gap-3 text-[11px] uppercase tracking-[0.3em] text-white/40">
-              <Link href="/" className="hover:text-white transition-colors">Business Connect</Link>
+              <Link href="/directory" className="hover:text-white transition-colors">Member Directory</Link>
               <span>/</span>
-              {cat && <Link href={`/${m.categorySlug}`} className="hover:text-white transition-colors">{cat.name}</Link>}
+              {cat && <span>{cat.name}</span>}
               <span>/</span>
               <span className="text-white/60">{m.name}</span>
             </div>
@@ -176,7 +176,7 @@ export default async function MemberProfilePage({
                     Let&apos;s Talk Business
                   </Link>
                   <Link
-                    href="/"
+                    href="/apply"
                     className="inline-flex items-center rounded-full border border-charcoal/20 px-8 py-4 text-[12px] uppercase tracking-[0.25em] text-charcoal transition-all duration-500 hover:bg-charcoal hover:text-white"
                   >
                     Join the Network
@@ -248,10 +248,10 @@ export default async function MemberProfilePage({
                 </div>
                 {cat && (
                   <Link
-                    href={`/${m.categorySlug}`}
+                    href="/directory"
                     className="hidden sm:inline-flex items-center gap-2 rounded-full border border-charcoal/20 px-6 py-3 text-[12px] uppercase tracking-[0.2em] text-charcoal transition-all duration-300 hover:bg-charcoal hover:text-white"
                   >
-                    View All
+                    View Directory
                   </Link>
                 )}
               </div>
@@ -310,7 +310,7 @@ export default async function MemberProfilePage({
                     Apply for Membership
                   </Link>
                   <Link
-                    href="/"
+                    href="/directory"
                     className="inline-flex items-center rounded-full border border-white/35 px-8 py-4 text-[12px] uppercase tracking-[0.25em] text-white transition-all duration-500 hover:bg-white/10"
                   >
                     Browse All Members
