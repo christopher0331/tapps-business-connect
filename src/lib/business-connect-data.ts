@@ -65,6 +65,10 @@ export type Member = {
 
 const CDN2 = "https://cdn.prod.website-files.com/67d9e1a205bd4e3c72c4cae0";
 
+function memberPhoto(folder: string, filename: string) {
+  return `/memberPhotos/${folder}/${encodeURIComponent(filename)}`;
+}
+
 export const allMembers: Member[] = [
   // ── HOME SERVICES ──────────────────────────────────────────────────────────
   {
@@ -469,6 +473,174 @@ export const allMembers: Member[] = [
     tiktok: "",
     bio: "Eikon Homes is the South Sound's premier full-service design & build contractor. We're not just builders — we're craftsmen, creators, and partners in bringing your vision to life. Every project is designed with precision, built with integrity, and managed with care from start to finish. Our clients choose Eikon Homes because we deliver a luxury-level remodeling experience — combining transparent communication, meticulous cleanliness practices, and flawless attention to detail.",
   },
+  {
+    slug: "andrew-knudsen-myfence",
+    name: "Andrew Knudsen",
+    company: "MyFence.com",
+    categorySlug: "trades-specialty",
+    category: "Trades & Specialty",
+    specialty: "Fence Contracting | Fence Genius Build Process",
+    photo: memberPhoto("andrewKnudsen", "andrewKnudsenPhoto.jpeg"),
+    photos: [
+      memberPhoto("andrewKnudsen", "andrewKnudsenPhoto.jpeg"),
+      memberPhoto("andrewKnudsen", "14670eab-5daa-4e56-a6ca-62b589b7cf95-2-174887254business_logo-MyFence.com Logo-2f926b.png"),
+      memberPhoto("andrewKnudsen", "14670eab-5daa-4e56-a6ca-62b589b7cf95-2-174887254marketing_photo_1-Craftsman Style Board on Board Fence-0d702a.png"),
+      memberPhoto("andrewKnudsen", "14670eab-5daa-4e56-a6ca-62b589b7cf95-2-174887254marketing_photo_2-MyFence.com 1080x1080 1-36441a.png"),
+      memberPhoto("andrewKnudsen", "14670eab-5daa-4e56-a6ca-62b589b7cf95-2-174887254marketing_photo_3-MyFence.com Software and Actual 3-bb9ce6.png"),
+    ],
+    phone: "253-298-8646",
+    website: "https://myfence.com/",
+    facebook: "https://www.facebook.com/myfence.com.official",
+    instagram: "",
+    linkedin: "",
+    tiktok: "https://www.tiktok.com/@myfence.com",
+    bio: "We are your local fence contracting company MyFence.com. We serve from Orting to Bothell and have a one-of-one fence construction approach through a new advanced fence construction method via Fence Genius, enabling total customer clarity and near-perfect quality through our patented build process.",
+  },
+
+  // ── FOOD & HOSPITALITY ─────────────────────────────────────────────────────
+  {
+    slug: "stephanie-jensen-coffee-vault",
+    name: "Stephanie Jensen",
+    company: "Coffee Vault & Lake Tapps Society",
+    categorySlug: "food-hospitality",
+    category: "Food & Hospitality",
+    specialty: "Coffee, Snacks & Local Community Hospitality",
+    photo: memberPhoto("stephanieJensen", "stephanieJensenPhoto.jpeg"),
+    photos: [
+      memberPhoto("stephanieJensen", "stephanieJensenPhoto.jpeg"),
+      memberPhoto("stephanieJensen", "3c7ff229-036b-43db-a9bc-142d91974669-2-174887254business_logo-image0-42a054.jpeg"),
+      memberPhoto("stephanieJensen", "3c7ff229-036b-43db-a9bc-142d91974669-2-174887254marketing_photo_1-IMG_3489_jpg-273cd5.jpeg"),
+      memberPhoto("stephanieJensen", "3c7ff229-036b-43db-a9bc-142d91974669-2-174887254marketing_photo_2-IMG_6055_jpg-cc68ff.jpeg"),
+      memberPhoto("stephanieJensen", "3c7ff229-036b-43db-a9bc-142d91974669-2-174887254marketing_photo_3-IMG_6693_jpg-85db39.jpeg"),
+    ],
+    phone: "253-224-7015",
+    website: "https://coffeevaultco.com/",
+    facebook: "",
+    instagram: "https://www.instagram.com/coffeevault_co/",
+    linkedin: "",
+    tiktok: "",
+    bio: "At Coffee Vault and The Lake Tapps Society, we strive to provide high quality drinks, snacks and service coupled with a comfortable experience that highlights and supports everything that makes Lake Tapps and our local community so special! Follow us on Instagram at @coffeevault_co and @thelaketappssociety.",
+  },
+
+  // ── HEALTH & WELLNESS ────────────────────────────────────────────────────────
+  {
+    slug: "amanda-matthews-precision-and-grace-aesthetics",
+    name: "Amanda Matthews",
+    company: "Precision and Grace Aesthetics",
+    categorySlug: "health-wellness",
+    category: "Health & Wellness",
+    specialty: "Medical Aesthetics & Wellness | Neurotoxins, Filler & IV Therapy",
+    photo: memberPhoto("amandaMathews", "amandaMathewsPhoto.png"),
+    photos: [
+      memberPhoto("amandaMathews", "amandaMathewsPhoto.png"),
+      memberPhoto("amandaMathews", "2d6eb89f-04af-4534-a113-15e97e6d00f6-2-174887254business_logo-Precision and Grace Logo with white background-3825c5.png"),
+      memberPhoto("amandaMathews", "2d6eb89f-04af-4534-a113-15e97e6d00f6-2-174887254marketing_photo_2-Untitled design-5014b2.png"),
+      memberPhoto("amandaMathews", "2d6eb89f-04af-4534-a113-15e97e6d00f6-2-174887254marketing_photo_3-IMG_7581-b66172.jpg"),
+    ],
+    phone: "253-961-1528",
+    website: "",
+    facebook: "https://www.facebook.com/profile.php?id=61587930846434",
+    instagram: "https://www.instagram.com/precision_and_grace/",
+    linkedin: "",
+    tiktok: "",
+    bio: "Rooted in Anatomy. Refined with Grace. Where clinical precision meets refined aesthetics. Precision and Grace Aesthetics is an anatomy-led aesthetic and wellness practice founded and led by Amanda Matthews, ARNP. We offer personalized treatments including neurotoxins, dermal filler, microneedling, chemical peels, and IV therapy. Our approach is grounded in safety, integrity, and education, enhancing your natural features while supporting wellness from within. We believe in refining, not redefining, and creating results that feel balanced and uniquely you. Whether you walk in dressed up or straight from the gym, you are welcomed as you are. Proudly serving Pierce County with locations in Bonney Lake and Puyallup, we are committed to helping you feel confident and supported at every stage of life.",
+  },
+  {
+    slug: "stephanie-lyman-welling-health",
+    name: "Stephanie Lyman",
+    company: "Welling Health",
+    categorySlug: "health-wellness",
+    category: "Health & Wellness",
+    specialty: "Telehealth | Metabolic Health & Hormone Optimization",
+    photo: memberPhoto("stephanieLyman", "stephanieLymanPhoto.png"),
+    photos: [
+      memberPhoto("stephanieLyman", "stephanieLymanPhoto.png"),
+      memberPhoto("stephanieLyman", "97c29599-6e4e-4976-9316-2c1ae4424d75-2-174887254business_logo-image-6ce461.png"),
+      memberPhoto("stephanieLyman", "97c29599-6e4e-4976-9316-2c1ae4424d75-2-174887254marketing_photo_1-ChatGPT Image Apr 3, 2026 at 11_21_51 AM-3bbbbb.png"),
+      memberPhoto("stephanieLyman", "97c29599-6e4e-4976-9316-2c1ae4424d75-2-174887254marketing_photo_2-Screenshot 2026-05-11 123911-aab906.jpg"),
+      memberPhoto("stephanieLyman", "97c29599-6e4e-4976-9316-2c1ae4424d75-2-174887254marketing_photo_3-Screenshot 2026-05-11 124018-8357a3.jpg"),
+    ],
+    phone: "619-496-6318",
+    website: "https://wellinghealth.com/",
+    facebook: "",
+    instagram: "https://www.instagram.com/well_ing_health",
+    linkedin: "",
+    tiktok: "",
+    bio: "Welling is a Washington based telehealth wellness practice founded by Stephanie Lyman, ARNP, FNP BC, focused on individualized metabolic health, sustainable weight management, and hormone optimization. Serving patients across Washington State, Welling takes a \"low and slow\" approach to care, emphasizing precision dosing, long term success, body composition preservation, and patient education. What makes Welling different is the highly personalized support, collaborative care model, and focus on helping patients better understand their bodies through evidence based treatment, nutrition guidance, lifestyle support, and advanced tools like GLP-1 therapy, DEXA analysis, and hormone focused care.",
+  },
+
+  // ── NEW HOME SERVICES MEMBERS ──────────────────────────────────────────────
+  {
+    slug: "dekota-bramsche-rpm-today",
+    name: "Dekota Bramsche",
+    company: "RPM Today | Property Management",
+    categorySlug: "home-services",
+    category: "Home Services",
+    specialty: "Residential & Commercial Property Management",
+    photo: memberPhoto("dekotaBramsche", "dekotaBramsche.jpg"),
+    photos: [
+      memberPhoto("dekotaBramsche", "dekotaBramsche.jpg"),
+      memberPhoto("dekotaBramsche", "ef14ec2b-dcc9-416c-ab5b-097b74242bae-2-174887254business_logo-RPMLOGO-4e103a.png"),
+      memberPhoto("dekotaBramsche", "ef14ec2b-dcc9-416c-ab5b-097b74242bae-2-174887254marketing_photo_1-Beach RPM-05b88e.jpg"),
+      memberPhoto("dekotaBramsche", "ef14ec2b-dcc9-416c-ab5b-097b74242bae-2-174887254marketing_photo_2-The One RPM-f97c89.jpg"),
+      memberPhoto("dekotaBramsche", "ef14ec2b-dcc9-416c-ab5b-097b74242bae-2-174887254marketing_photo_3-Puyallup SFH-89df47.jpg"),
+    ],
+    phone: "253-625-6902",
+    website: "https://rpmtoday.com/",
+    facebook: "",
+    instagram: "https://www.instagram.com/rpmtoday/",
+    linkedin: "https://www.linkedin.com/in/dekota-bramsche-8160522a4",
+    tiktok: "",
+    bio: "My name is Dekota Bramsche and I'm the Business Development Manager at Real Property Management Today. We focus on delivering reliable, full-service property management that protects our clients' investments while creating high-quality homes for residents. We take pride in ensuring every property is managed with attention to detail, clear communication, and a proactive approach. At RPM Today, we understand that successful property management is about more than just collecting rent — it's about maximizing long-term value. We handle everything from tenant placement and maintenance to financial oversight and compliance, all with the goal of reducing risk and improving performance for owners. At the same time, we believe residents deserve well-maintained, comfortable homes. By balancing owner priorities with resident satisfaction, we help reduce turnover, protect property condition, and build stronger communities. We serve Pierce County, Kitsap County, Southern King County, and North Thurston County.",
+  },
+  {
+    slug: "becky-barringer-barringer-design-studio",
+    name: "Becky Barringer",
+    company: "Barringer Design Studio",
+    categorySlug: "home-services",
+    category: "Home Services",
+    specialty: "Interior Design | Remodels & New Construction",
+    photo: memberPhoto("beckyBerringer", "beckyBarringerPhoto.jpeg"),
+    photos: [
+      memberPhoto("beckyBerringer", "beckyBarringerPhoto.jpeg"),
+      memberPhoto("beckyBerringer", "10a9a8a6-0935-4e0d-adb9-0501d0bd23e6-2-174887254business_logo-Barringer Design Studio Logo-bdca26.png"),
+      memberPhoto("beckyBerringer", "10a9a8a6-0935-4e0d-adb9-0501d0bd23e6-2-174887254marketing_photo_1-IMG_8166-02c17a.jpg"),
+      memberPhoto("beckyBerringer", "10a9a8a6-0935-4e0d-adb9-0501d0bd23e6-2-174887254marketing_photo_2-Floor Detail-bc618b.jpg"),
+      memberPhoto("beckyBerringer", "10a9a8a6-0935-4e0d-adb9-0501d0bd23e6-2-174887254marketing_photo_3-IMG_8042-124686.jpg"),
+    ],
+    phone: "253-380-8398",
+    website: "https://www.barringerdesignstudio.com/",
+    facebook: "",
+    instagram: "https://www.instagram.com/barringer_design_studio",
+    linkedin: "",
+    tiktok: "",
+    bio: "Barringer Design Studio is a full-service interior design studio specializing in home furnishings, remodels, and new construction in the South Puget Sound area and beyond. Through our thoughtful, proven design process, we guide each project from initial concept to final walkthrough with care, clarity, and intention. At BDS, great design is about more than beautiful finishes. It's about creating spaces that flow well, function effortlessly, and make everyday life feel easier and more enjoyable. We partner with homeowners who value a well-organized, intentional approach to remodeling and furnishing their homes — one rooted in trust, clarity, and thoughtful decision-making. We take the time to understand your style, how you live, and what you want your home to do for you — then thoughtfully curate a design that feels both elevated and deeply functional. Our goal is to make the entire experience feel seamless, refined, and as stress-free as possible.",
+  },
+
+  // ── NEW FINANCE & PROFESSIONAL MEMBERS ─────────────────────────────────────
+  {
+    slug: "lyndsy-vasquez-odegard-law",
+    name: "Lyndsy Vasquez",
+    company: "Odegard Law",
+    categorySlug: "finance-professional",
+    category: "Finance & Professional",
+    specialty: "Personal Injury Law",
+    photo: memberPhoto("odegardLaw", "lyndsyVasquezPhoto.jpeg"),
+    photos: [
+      memberPhoto("odegardLaw", "lyndsyVasquezPhoto.jpeg"),
+      memberPhoto("odegardLaw", "638428d1-05f7-4c3f-9dbc-8d8ff1ba1314-2-174887254business_logo-IMG_0010-9ce2e6.jpeg"),
+      memberPhoto("odegardLaw", "638428d1-05f7-4c3f-9dbc-8d8ff1ba1314-2-174887254marketing_photo_1-IMG_1194-20b6e3.jpeg"),
+      memberPhoto("odegardLaw", "638428d1-05f7-4c3f-9dbc-8d8ff1ba1314-2-174887254marketing_photo_2-8A70A9A8-5BB4-4EE8-B2D5-E6CEA6A211F7-1d7377.png"),
+      memberPhoto("odegardLaw", "638428d1-05f7-4c3f-9dbc-8d8ff1ba1314-2-174887254marketing_photo_3-9277EF39-118D-4D2D-BD6F-E81C91CCEDF6-f31c70.png"),
+    ],
+    phone: "253-293-8349",
+    website: "https://odegardlawfirm.com/",
+    facebook: "https://www.facebook.com/share/1B8AtMuQ7q/?mibextid=wwXIfr",
+    instagram: "https://www.instagram.com/odegardlegal",
+    linkedin: "",
+    tiktok: "",
+    bio: "At Odegard Law, we are more than just a personal injury firm — we are advocates for our community. We believe every client deserves honesty, communication, and a team that truly fights for their best interests. While many firms focus on volume, we focus on results, relationships, and real advocacy. Our mission is simple: protect our clients, stand by them from start to finish, and deliver the strong representation they deserve.",
+  },
 
 ];
 
@@ -478,8 +650,8 @@ export const members: Record<string, Member[]> = {
   "finance-professional": allMembers.filter((m) => m.categorySlug === "finance-professional"),
   "trades-specialty": allMembers.filter((m) => m.categorySlug === "trades-specialty"),
   "lifestyle-personal-services": allMembers.filter((m) => m.categorySlug === "lifestyle-personal-services"),
-  "food-hospitality": [],
-  "health-wellness": [],
+  "food-hospitality": allMembers.filter((m) => m.categorySlug === "food-hospitality"),
+  "health-wellness": allMembers.filter((m) => m.categorySlug === "health-wellness"),
 };
 
 export const membersBySlug: Record<string, Member> = Object.fromEntries(
