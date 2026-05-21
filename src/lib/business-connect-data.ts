@@ -58,6 +58,9 @@ export type Member = {
   website: string;
   facebook: string;
   instagram: string;
+  instagramLabel?: string;
+  instagram2?: string;
+  instagram2Label?: string;
   linkedin: string;
   tiktok: string;
   bio: string;
@@ -517,9 +520,12 @@ export const allMembers: Member[] = [
     website: "https://coffeevaultco.com/",
     facebook: "",
     instagram: "https://www.instagram.com/coffeevault_co/",
+    instagramLabel: "Coffee Vault",
+    instagram2: "https://www.instagram.com/thelaketappssociety/",
+    instagram2Label: "Lake Tapps Society",
     linkedin: "",
     tiktok: "",
-    bio: "At Coffee Vault and The Lake Tapps Society, we strive to provide high quality drinks, snacks and service coupled with a comfortable experience that highlights and supports everything that makes Lake Tapps and our local community so special! Follow us on Instagram at @coffeevault_co and @thelaketappssociety.",
+    bio: "At Coffee Vault and The Lake Tapps Society, we strive to provide high quality drinks, snacks and service coupled with a comfortable experience that highlights and supports everything that makes Lake Tapps and our local community so special!",
   },
 
   // ── HEALTH & WELLNESS ────────────────────────────────────────────────────────

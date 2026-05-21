@@ -84,7 +84,8 @@ export default async function MemberProfilePage({
     m.website && { type: "website", href: m.website, label: "Website" },
     m.phone && { type: "phone", href: `tel:${m.phone}`, label: m.phone },
     m.facebook && { type: "facebook", href: m.facebook, label: "Facebook" },
-    m.instagram && { type: "instagram", href: m.instagram, label: "Instagram" },
+    m.instagram && { type: "instagram", href: m.instagram, label: m.instagramLabel ?? "Instagram" },
+    m.instagram2 && { type: "instagram", href: m.instagram2, label: m.instagram2Label ?? "Instagram" },
     m.linkedin && { type: "linkedin", href: m.linkedin, label: "LinkedIn" },
     m.tiktok && { type: "tiktok", href: m.tiktok, label: "TikTok" },
   ].filter(Boolean) as { type: string; href: string; label: string }[];
