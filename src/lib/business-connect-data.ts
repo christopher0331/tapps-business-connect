@@ -384,7 +384,7 @@ export const allMembers: Member[] = [
       `${CDN2}/695d39fec9beca93ca1e25c1_8e22371c-6bf8-4bd7-8b01-fe56c70cb489-2-174887254business_logo-MaxCARE_Logo_RGB-321ccd.jpg`,
       `${CDN2}/695d39d79dc5df8f8aaab041_96.jpg`,
     ],
-    phone: "253-864-6445",
+    phone: "253-223-8228",
     website: "https://maxcare247.com/",
     facebook: "https://www.facebook.com/people/MaxCare-of-Washington-INC/61566166307982/",
     instagram: "",
