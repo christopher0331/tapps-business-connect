@@ -60,6 +60,12 @@ function SocialIcon({ type }: { type: string }) {
         <path d="M14.5 3c.3 1.4 1.1 2.5 2.5 3v2.5c-1.5 0-2.8-.6-3.5-1.4V13a5 5 0 1 1-5-5c.2 0 .3 0 .5.02V10.5A2.5 2.5 0 1 0 12 13V3h2.5z" />
       </svg>
     ),
+    email: (
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4">
+        <rect x="2.5" y="4.5" width="15" height="11" rx="1.5" />
+        <path d="M2.5 6.5 10 11l7.5-4.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
   };
   return icons[type] ? <>{icons[type]}</> : null;
 }
@@ -83,6 +89,7 @@ export default async function MemberProfilePage({
   const socialLinks = [
     m.website && { type: "website", href: m.website, label: "Website" },
     m.phone && { type: "phone", href: `tel:${m.phone}`, label: m.phone },
+    m.email && { type: "email", href: `mailto:${m.email}`, label: m.email },
     m.facebook && { type: "facebook", href: m.facebook, label: "Facebook" },
     m.instagram && { type: "instagram", href: m.instagram, label: m.instagramLabel ?? "Instagram" },
     m.instagram2 && { type: "instagram", href: m.instagram2, label: m.instagram2Label ?? "Instagram" },
@@ -197,6 +204,7 @@ export default async function MemberProfilePage({
                       { label: "Specialty", value: m.specialty },
                       { label: "Category", value: m.category },
                       ...(m.phone ? [{ label: "Phone", value: m.phone }] : []),
+                      ...(m.email ? [{ label: "Email", value: m.email }] : []),
                     ].map(({ label, value }) => (
                       <div key={label} className="flex items-baseline justify-between border-b border-charcoal/8 pb-4 last:border-0 last:pb-0">
                         <dt className="text-[12px] font-medium text-charcoal/60">{label}</dt>
@@ -220,17 +228,27 @@ export default async function MemberProfilePage({
                 </div>
 
                 {/* Gallery photos below details */}
-                {galleryPhotos.map((img, i) => (
-                  <div key={img} className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-                    <Image
-                      src={img}
-                      alt={`${m.company} — photo ${i + 2}`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 40vw"
-                    />
-                  </div>
-                ))}
+                {galleryPhotos.map((img, i) => {
+                  const isLogo = /logo/i.test(img);
+                  return (
+                    <div
+                      key={img}
+                      className={
+                        isLogo
+                          ? "relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-[#1a1a18] p-8"
+                          : "relative aspect-[4/3] overflow-hidden rounded-2xl"
+                      }
+                    >
+                      <Image
+                        src={img}
+                        alt={isLogo ? `${m.company} logo` : `${m.company} — photo ${i + 2}`}
+                        fill
+                        className={isLogo ? "object-contain p-6" : "object-cover"}
+                        sizes="(max-width: 1024px) 100vw, 40vw"
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

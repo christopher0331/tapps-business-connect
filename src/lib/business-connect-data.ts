@@ -55,6 +55,7 @@ export type Member = {
   photo: string;
   photos: string[];
   phone: string;
+  email?: string;
   website: string;
   facebook: string;
   instagram: string;
@@ -286,25 +287,25 @@ export const allMembers: Member[] = [
     bio: "WaFd Bank is proud to serve small towns and big cities in nine western states. For more than 100 years, WaFd Bank has been a stable, community-focused financial partner. Brittany Guempel brings personalized banking solutions for individuals, small businesses, and commercial clients — offering checking, savings, loans, and business banking products tailored to the Pacific Northwest community.",
   },
   {
-    slug: "gina-humphries-edward-jones",
+    slug: "gina-humphries-ameriprise-financial",
     name: "Gina Humphries",
-    company: "Edward Jones",
+    company: "Ameriprise Financial Services, LLC",
     categorySlug: "finance-professional",
     category: "Finance & Professional",
     specialty: "Financial Advisor",
     photo: `${CDN2}/690bc1c628edc4863747c911_0283a1b1-1676-4d05-a80e-e5e2d9fd0a83-2-174887254tbc_formal_headshot-Gina%20headshot%20july2025.jpg`,
     photos: [
       `${CDN2}/690bc1c628edc4863747c911_0283a1b1-1676-4d05-a80e-e5e2d9fd0a83-2-174887254tbc_formal_headshot-Gina%20headshot%20july2025.jpg`,
-      `${CDN2}/690bc21415c040cbe812b3d4_0283a1b1-1676-4d05-a80e-e5e2d9fd0a83-2-174887254business_logo-EJ%20Logo.png`,
-      `${CDN2}/690bc263b66c508f0bed0c3f_EJ3.jpg`,
+      memberPhoto("ginaHumphries", "AMPF_Logo_2026_w.png"),
     ],
-    phone: "253-648-7114",
-    website: "https://www.edwardjones.com/us-en/financial-advisor/gina-humphries",
-    facebook: "https://www.facebook.com/ginahumphriesedwardjones",
+    phone: "206-310-2272",
+    email: "Gina.Humphries@ampf.com",
+    website: "https://www.ameripriseadvisors.com/gina.humphries/?awsrc=namematch",
+    facebook: "",
     instagram: "",
-    linkedin: "https://www.linkedin.com/in/gina-humphries-8b65ba110",
+    linkedin: "",
     tiktok: "",
-    bio: "Hello, my name is Gina Humphries, and I am a Financial Advisor in Bonney Lake with Edward Jones. I believe financial planning should be personal, purposeful, and grounded in a deep understanding of what matters most to you. I work with individuals and families to build long-term investment strategies, plan for retirement, and protect what they've worked hard to build — with the support of Edward Jones' resources and my commitment to personal service.",
+    bio: "Hello, my name is Gina Humphries, and I am a Financial Advisor in Bonney Lake with Ameriprise Financial. I believe financial planning should be personal, purposeful, and grounded in a deep understanding of what matters most to you. I work with individuals and families to build long-term investment strategies, plan for retirement, and protect what they've worked hard to build — with the support of Ameriprise Financial's resources and my commitment to personal service.",
   },
   {
     slug: "kim-campbell-campbell-tax-accounting",
@@ -495,7 +496,7 @@ export const allMembers: Member[] = [
     website: "https://myfence.com/",
     facebook: "https://www.facebook.com/myfence.com.official",
     instagram: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/andrew-knudsen-70a16118b/",
     tiktok: "https://www.tiktok.com/@myfence.com",
     bio: "We are your local fence contracting company MyFence.com. We serve from Orting to Bothell and have a one-of-one fence construction approach through a new advanced fence construction method via Fence Genius, enabling total customer clarity and near-perfect quality through our patented build process.",
   },
@@ -544,7 +545,7 @@ export const allMembers: Member[] = [
       memberPhoto("amandaMathews", "2d6eb89f-04af-4534-a113-15e97e6d00f6-2-174887254marketing_photo_3-IMG_7581-b66172.jpg"),
     ],
     phone: "253-961-1528",
-    website: "",
+    website: "https://www.precisionandgrace.com/",
     facebook: "https://www.facebook.com/profile.php?id=61587930846434",
     instagram: "https://www.instagram.com/precision_and_grace/",
     linkedin: "",
@@ -646,6 +647,29 @@ export const allMembers: Member[] = [
     linkedin: "",
     tiktok: "",
     bio: "At Odegard Law, we are more than just a personal injury firm — we are advocates for our community. We believe every client deserves honesty, communication, and a team that truly fights for their best interests. While many firms focus on volume, we focus on results, relationships, and real advocacy. Our mission is simple: protect our clients, stand by them from start to finish, and deliver the strong representation they deserve.",
+  },
+  {
+    slug: "chelsea-scott-nelson-allen-walk-scott",
+    name: "Chelsea Scott",
+    company: "Nelson Allen Walk & Scott, PLLC",
+    categorySlug: "finance-professional",
+    category: "Finance & Professional",
+    specialty: "Attorney",
+    photo: memberPhoto("chelseaScott", "chelseaScottPhoto.jpg"),
+    photos: [
+      memberPhoto("chelseaScott", "chelseaScottPhoto.jpg"),
+      memberPhoto("chelseaScott", "86510775-6d1c-436a-b427-1c7b3e94151e-2-174887254business_logo-Logo-a90f13.jpg"),
+      memberPhoto("chelseaScott", "86510775-6d1c-436a-b427-1c7b3e94151e-2-174887254marketing_photo_1-689016632_1456221909638600_8574337162739636533_n-40a3a1.jpg"),
+      memberPhoto("chelseaScott", "86510775-6d1c-436a-b427-1c7b3e94151e-2-174887254marketing_photo_3-Office-6cb51d.jpg"),
+    ],
+    phone: "253-224-7019",
+    email: "chelsea@nawslaw.com",
+    website: "https://nawslaw.com/",
+    facebook: "https://www.facebook.com/nelsonallenwalk",
+    instagram: "",
+    linkedin: "",
+    tiktok: "",
+    bio: "Nelson Allen Walk & Scott, PLLC is a trusted Pacific Northwest law firm proudly serving communities throughout the greater Puget Sound region. Our attorneys provide strategic, client-focused representation in family law, real estate, estate planning, business law, civil litigation, and personal injury cases. What sets our firm apart is our combination of deep local roots, extensive courtroom and transactional experience, and a commitment to personalized service. We understand that every client's situation is unique, and we take pride in delivering practical solutions, responsive communication, and compassionate advocacy while fiercely protecting our clients' interests.",
   },
 
 ];
