@@ -510,7 +510,7 @@ export const allMembers: Member[] = [
       memberPhoto("andrewKnudsen", "14670eab-5daa-4e56-a6ca-62b589b7cf95-2-174887254marketing_photo_2-MyFence.com 1080x1080 1-36441a.png"),
       memberPhoto("andrewKnudsen", "14670eab-5daa-4e56-a6ca-62b589b7cf95-2-174887254marketing_photo_3-MyFence.com Software and Actual 3-bb9ce6.png"),
     ],
-    phone: "253-298-8646",
+    phone: "253-455-1885",
     email: "info@myfence.com",
     website: "https://myfence.com/",
     facebook: "https://www.facebook.com/myfence.com.official",
