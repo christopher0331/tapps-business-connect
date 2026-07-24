@@ -719,6 +719,31 @@ export const allMembers: Member[] = [
     tiktok: "",
     bio: "Flourish Advising helps growing businesses create clarity through streamlined processes, workflow optimization, KPI visibility, and scalable operational systems — so owners can step out of the day-to-day and lead with confidence. Founder Jaime Aust's passion for operational efficiency started in a flower shop, where she learned that time is money and structure creates freedom. After becoming Six Sigma certified and helping identify inefficiencies that saved a company over $12 million annually, she now partners with small businesses to document SOPs, simplify workflows and scheduling, and build the visibility they need to grow without the chaos.",
   },
+  {
+    slug: "anthony-smith-corporate-synergy-solutions",
+    name: "Anthony Smith",
+    company: "Corporate Synergy Solutions",
+    categorySlug: "finance-professional",
+    category: "Finance & Professional",
+    specialty: "Field Service Operating Systems | AI Dispatch, SOPs & Cash Flow",
+    photo: memberPhoto("anthonySmith", "anthonySmithPhoto.jpg"),
+    photos: [
+      memberPhoto("anthonySmith", "anthonySmithPhoto.jpg"),
+      memberPhoto("anthonySmith", "business_logo-CSS-new-logo-transparent.png"),
+      memberPhoto("anthonySmith", "marketing_photo_1-mktg_promo_1.png"),
+      memberPhoto("anthonySmith", "marketing_photo_2-mktg_promo_2.png"),
+      memberPhoto("anthonySmith", "marketing_photo_3-mktg_promo_3.png"),
+      memberPhoto("anthonySmith", "tbc_formal_headshot-kirschcreative_anthony-1.jpg"),
+    ],
+    phone: "425-435-7747",
+    email: "anthony@corporatesynergysolutions.com",
+    website: "https://www.corporatesynergysolutions.com/",
+    facebook: "https://www.facebook.com/corporatesynergysolutions",
+    instagram: "",
+    linkedin: "",
+    tiktok: "",
+    bio: "Corporate Synergy Solutions designs and builds custom, AI-driven operating systems for field service businesses scaling from $1M to $10M — retiring whiteboards, spreadsheets, group texts, and manual dispatch so owners reclaim margin and stop being the bottleneck. Founder Anthony Smith brings Microsoft operations experience, fractional COO work with $5M+ companies, and a master's in Organizational Development to engineer zero-friction systems crews actually adopt. Based in Auburn, WA, CSS serves the greater Seattle / Puget Sound area and trade businesses nationwide.",
+  },
 
 ];
 
