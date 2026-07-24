@@ -695,6 +695,28 @@ export const allMembers: Member[] = [
     tiktok: "",
     bio: "Nelson Allen Walk & Scott, PLLC is a trusted Pacific Northwest law firm proudly serving communities throughout the greater Puget Sound region. Our attorneys provide strategic, client-focused representation in family law, real estate, estate planning, business law, civil litigation, and personal injury cases. What sets our firm apart is our combination of deep local roots, extensive courtroom and transactional experience, and a commitment to personalized service. We understand that every client's situation is unique, and we take pride in delivering practical solutions, responsive communication, and compassionate advocacy while fiercely protecting our clients' interests.",
   },
+  {
+    slug: "jaime-aust-flourish-advising",
+    name: "Jaime Aust",
+    company: "Flourish Advising",
+    categorySlug: "finance-professional",
+    category: "Finance & Professional",
+    specialty: "Business Operations Advising | SOPs, Workflows & KPIs",
+    photo: memberPhoto("jaimeAust", "jaimeAustPhoto.png"),
+    photos: [
+      memberPhoto("jaimeAust", "jaimeAustPhoto.png"),
+      memberPhoto("jaimeAust", "business_logo-advising.png"),
+      memberPhoto("jaimeAust", "marketing_photo_1-casual.jpg"),
+    ],
+    phone: "425-906-9516",
+    email: "jaime@flourishadvising.com",
+    website: "https://flourishadvising.com/",
+    facebook: "https://www.facebook.com/profile.php?id=61589756444968",
+    instagram: "https://www.instagram.com/flourish_advising",
+    linkedin: "https://www.linkedin.com/company/flourishadvising/",
+    tiktok: "",
+    bio: "Flourish Advising helps growing businesses create clarity through streamlined processes, workflow optimization, KPI visibility, and scalable operational systems — so owners can step out of the day-to-day and lead with confidence. Founder Jaime Aust's passion for operational efficiency started in a flower shop, where she learned that time is money and structure creates freedom. After becoming Six Sigma certified and helping identify inefficiencies that saved a company over $12 million annually, she now partners with small businesses to document SOPs, simplify workflows and scheduling, and build the visibility they need to grow without the chaos.",
+  },
 
 ];
 
