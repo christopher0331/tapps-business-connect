@@ -706,7 +706,9 @@ export const allMembers: Member[] = [
     photos: [
       memberPhoto("jaimeAust", "jaimeAustPhoto.png"),
       memberPhoto("jaimeAust", "business_logo-advising.png"),
-      memberPhoto("jaimeAust", "marketing_photo_1-casual.jpg"),
+      memberPhoto("jaimeAust", "marketing_photo_1-flourish-approach.png"),
+      memberPhoto("jaimeAust", "marketing_photo_3-team.png"),
+      memberPhoto("jaimeAust", "tbc_formal_headshot-IMG_5390.png"),
     ],
     phone: "425-906-9516",
     email: "jaime@flourishadvising.com",
