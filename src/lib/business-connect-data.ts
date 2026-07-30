@@ -572,30 +572,6 @@ export const allMembers: Member[] = [
     tiktok: "",
     bio: "Rooted in Anatomy. Refined with Grace. Where clinical precision meets refined aesthetics. Precision and Grace Aesthetics is an anatomy-led aesthetic and wellness practice founded and led by Amanda Matthews, ARNP. We offer personalized treatments including neurotoxins, dermal filler, microneedling, chemical peels, and IV therapy. Our approach is grounded in safety, integrity, and education, enhancing your natural features while supporting wellness from within. We believe in refining, not redefining, and creating results that feel balanced and uniquely you. Whether you walk in dressed up or straight from the gym, you are welcomed as you are. Proudly serving Pierce County with locations in Bonney Lake and Puyallup, we are committed to helping you feel confident and supported at every stage of life.",
   },
-  {
-    slug: "stephanie-lyman-welling-health",
-    name: "Stephanie Lyman",
-    company: "Welling Health",
-    categorySlug: "health-wellness",
-    category: "Health & Wellness",
-    specialty: "Telehealth | Metabolic Health & Hormone Optimization",
-    photo: memberPhoto("stephanieLyman", "stephanieLymanPhoto.png"),
-    photos: [
-      memberPhoto("stephanieLyman", "stephanieLymanPhoto.png"),
-      memberPhoto("stephanieLyman", "97c29599-6e4e-4976-9316-2c1ae4424d75-2-174887254business_logo-image-6ce461.png"),
-      memberPhoto("stephanieLyman", "97c29599-6e4e-4976-9316-2c1ae4424d75-2-174887254marketing_photo_1-ChatGPT Image Apr 3, 2026 at 11_21_51 AM-3bbbbb.png"),
-      memberPhoto("stephanieLyman", "97c29599-6e4e-4976-9316-2c1ae4424d75-2-174887254marketing_photo_2-Screenshot 2026-05-11 123911-aab906.jpg"),
-      memberPhoto("stephanieLyman", "97c29599-6e4e-4976-9316-2c1ae4424d75-2-174887254marketing_photo_3-Screenshot 2026-05-11 124018-8357a3.jpg"),
-    ],
-    phone: "619-496-6318",
-    email: "slyman@wellinghealth.com",
-    website: "https://www.wellinghealth.com/",
-    facebook: "",
-    instagram: "https://www.instagram.com/well_ing_health",
-    linkedin: "",
-    tiktok: "",
-    bio: "Welling is a Washington based telehealth wellness practice founded by Stephanie Lyman, ARNP, FNP BC, focused on individualized metabolic health, sustainable weight management, and hormone optimization. Serving patients across Washington State, Welling takes a \"low and slow\" approach to care, emphasizing precision dosing, long term success, body composition preservation, and patient education. What makes Welling different is the highly personalized support, collaborative care model, and focus on helping patients better understand their bodies through evidence based treatment, nutrition guidance, lifestyle support, and advanced tools like GLP-1 therapy, DEXA analysis, and hormone focused care.",
-  },
 
   // ── NEW HOME SERVICES MEMBERS ──────────────────────────────────────────────
   {
