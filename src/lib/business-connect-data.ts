@@ -458,9 +458,9 @@ export const allMembers: Member[] = [
     categorySlug: "trades-specialty",
     category: "Trades & Specialty",
     specialty: "Residential & Commercial Painters",
-    photo: `${CDN2}/69a5ec0cacaf60c99e62a8ee_Justin%20Profile%20(1).jpg`,
+    photo: memberPhoto("justinSchulke", "justinSchulkePhoto.jpg"),
     photos: [
-      `${CDN2}/69a5ec0cacaf60c99e62a8ee_Justin%20Profile%20(1).jpg`,
+      memberPhoto("justinSchulke", "justinSchulkePhoto.jpg"),
       `${CDN2}/699dcfa8524979b0a5c3542c_TBC%20Website%20Photo%20Resize%20(1).jpg`,
       `${CDN2}/68f7f12b2a7fe8c78ef84cb1_DJI_0844-1-scaled.webp`,
     ],
