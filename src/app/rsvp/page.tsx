@@ -10,13 +10,16 @@ export const metadata: Metadata = {
     "RSVP for the next Tapps Business Connect meeting. Select your participation type — Current Member, Guest, or Affiliate.",
 };
 
+const RSVP_FORM_URL = "https://onsitecrm.netlify.app/tbc/rsvp";
+const GUEST_FORM_URL = "https://onsitecrm.netlify.app/tbc/guest";
+
 const options = [
   {
     num: "01",
     label: "Current Member",
     description:
       "Already an active TBC Member? Use this form to RSVP for the next Monthly Morning Members Meeting (M4) or Connections After Close.",
-    href: "https://share-na2.hsforms.com/1yG-Wx_XAR7mmHNinYWD5Zg415kr0",
+    href: RSVP_FORM_URL,
     cta: "Member RSVP",
   },
   {
@@ -24,7 +27,7 @@ const options = [
     label: "Guest / New to TBC",
     description:
       "Interested in attending as a Guest? This form is for professionals visiting for the first time or returning as a Guest in an open industry seat.",
-    href: "https://www.go.onsiteregroup.com/tbc-get-connected",
+    href: GUEST_FORM_URL,
     cta: "Guest RSVP",
   },
   {
@@ -32,7 +35,7 @@ const options = [
     label: "Affiliate",
     description:
       "An Affiliate who attended previously and wants to stay connected? Use this form to RSVP for Connections After Close and other extended events.",
-    href: "https://share-na2.hsforms.com/1yG-Wx_XAR7mmHNinYWD5Zg415kr0",
+    href: RSVP_FORM_URL,
     cta: "Affiliate RSVP",
   },
 ];

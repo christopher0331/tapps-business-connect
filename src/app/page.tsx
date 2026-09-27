@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 
 const memberToolLinks = [
   { label: "Member Application", href: "/apply" },
-  { label: "MTG Attendance Check-In", href: "https://share-na2.hsforms.com/2n3GfbQmvScGO5M9fakRKnQ415kr0", external: true },
   { label: "RSVP for Next Event", href: "/rsvp" },
   { label: "Group Structure & Guidelines", href: "/about" },
 ];
@@ -107,7 +106,6 @@ export default function BusinessConnectPage() {
                 <Link
                   key={l.label}
                   href={l.href}
-                  {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="flex items-center justify-between rounded-full bg-white px-6 py-4 text-[12px] uppercase tracking-[0.2em] text-charcoal/70 shadow-[0_8px_32px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-0.5 hover:text-charcoal hover:shadow-[0_14px_45px_rgba(0,0,0,0.09)]"
                 >
                   {l.label}
