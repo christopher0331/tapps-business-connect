@@ -72,7 +72,7 @@ const requirements = [
   },
 ];
 
-const APPLICATION_FORM_URL = "https://415kr0.share-na2.hsforms.com/2skIuf8o5Q3qUKGNleZ6XTg";
+const APPLICATION_FORM_URL = "https://onsitecrm.netlify.app/tbc/apply";
 
 export default function MemberApplicationPage() {
   return (
