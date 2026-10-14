@@ -522,9 +522,9 @@ export const allMembers: Member[] = [
 
   // ── FOOD & HOSPITALITY ─────────────────────────────────────────────────────
   {
-    slug: "stephanie-jensen-coffee-vault",
+    slug: "stephanie-jensen-lake-tapps-society",
     name: "Stephanie Jensen",
-    company: "Coffee Vault & Lake Tapps Society",
+    company: "Lake Tapps Society",
     categorySlug: "food-hospitality",
     category: "Food & Hospitality",
     specialty: "Coffee, Snacks & Local Community Hospitality",
@@ -540,13 +540,11 @@ export const allMembers: Member[] = [
     email: "coffeevault@tappscoffee.com",
     website: "https://coffeevaultco.com/",
     facebook: "",
-    instagram: "https://www.instagram.com/coffeevault_co/",
-    instagramLabel: "Coffee Vault",
-    instagram2: "https://www.instagram.com/thelaketappssociety/",
-    instagram2Label: "Lake Tapps Society",
+    instagram: "https://www.instagram.com/thelaketappssociety/",
+    instagramLabel: "Lake Tapps Society",
     linkedin: "",
     tiktok: "",
-    bio: "At Coffee Vault and The Lake Tapps Society, we strive to provide high quality drinks, snacks and service coupled with a comfortable experience that highlights and supports everything that makes Lake Tapps and our local community so special!",
+    bio: "At The Lake Tapps Society, we strive to provide high quality drinks, snacks and service coupled with a comfortable experience that highlights and supports everything that makes Lake Tapps and our local community so special!",
   },
 
   // ── HEALTH & WELLNESS ────────────────────────────────────────────────────────
