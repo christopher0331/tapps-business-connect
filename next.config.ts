@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/profiles/gina-humphries-ameriprise-financial",
         permanent: true,
       },
+      {
+        source: "/profiles/stephanie-jensen-coffee-vault",
+        destination: "/profiles/stephanie-jensen-lake-tapps-society",
+        permanent: true,
+      },
     ];
   },
   images: {
